@@ -1,0 +1,304 @@
+/* ==========================================================================
+   Flexible Nav
+   ========================================================================== */
+
+
+nav.flexible-nav{text-align:right;position:fixed;right:0px;height:100%;width:2px;top:0;right:0;border-left:4px dashed rgba(150, 150, 150, 0.2);background:white;z-index:9999;}nav.flexible-nav ul{padding:0;margin:0;list-style:none;}nav.flexible-nav ul li{margin:0;padding:0;}
+nav.flexible-nav ul li a{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;z-index:10001;text-decoration:none;position:fixed;right:3px;background:rgba(0,0,0,0.5);color:#eee;opacity:0.7;padding:2px 6px;transition-duration:0.2s;-moz-transition-duration:0.2s;-webkit-transition-duration:0.2s;-o-transition-duration:0.2s;transition-property:padding background color;-moz-transition-property:padding background color;-webkit-transition-property:padding background color;-o-transition-property:padding background color;}nav.flexible-nav ul li a:hover{z-index:11111;opacity:1;padding-right:12px;}
+nav.flexible-nav ul li a.current{background:#000;}
+nav.flexible-nav ul li a.tnn-h1{border-right:15px solid #A00;}
+nav.flexible-nav ul li a.tnn-h2{border-right:15px solid #406;}
+nav.flexible-nav ul li a.tnn-h3{border-right:15px solid #690;}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* For Menu Bar*/
+
+#logo{
+	float: left;
+}
+
+#nav{
+	background-color: white;
+}
+
+#nav .col-lg-3{
+	padding:1em;
+}
+
+#nav a{
+	text-align: center;
+	color: darkgray;
+	font-size: 1.2em;
+}
+
+.navbar-toggle{
+	display: block;
+	float: left;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: white;
+}
+
+/*
+* Main Wrapper
+ */
+
+.container-full{
+	margin:0 auto;
+	width: 100%;
+}
+
+#main-wrapper{
+	background:url(../img/feature-phone-3.jpg) rgb(100, 199, 255) no-repeat;
+	background-size: cover;
+}
+
+#graph-container{
+	position: relative;
+	height: 48em;
+	padding:20em;
+}
+
+#graph-container .row{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#store-links{
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+}
+
+#store-links>li{
+	float: left;
+	background-color: white;
+}
+
+#store-links li img{
+	-webkit-transition:0.3s all;
+	-moz-transition:0.3s all;
+	-ms-transition:0.3s all;
+	transition:0.3s all;
+}
+#store-links>li:hover img{
+	-webkit-transform:translateY(-5px);
+	-moz-transform:translateY(-5px);
+	-ms-transform:translateY(-5px);
+	transform:translateY(-5px);
+}
+
+#promotion-type{
+	z-index: 10;
+}
+
+#primary-type{
+	text-align: center;
+	color: white;
+	margin-top: 2.5em;
+	font-size: 5em;
+	font-family: 'Duru Sans', sans-serif;
+}
+
+#primary-cta {
+	font-size: 2em;
+	display: block;
+	border-color: white;
+	border-left:0;
+	border-right: 0;
+	border-radius: 0;
+	width: 40%;
+	margin-top: 20%;
+	color: white;
+	font-family: 'Duru Sans', sans-serif;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	transition:0.5s all;
+}
+
+#primary-cta:hover{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+	.flexible-nav{
+		display: none;
+	}
+	#main-wrapper{
+		background:url(../img/feature-phone-3.jpg) rgb(100, 199, 255) 88%;
+	}
+	#primary-type{
+		width: 75%;
+		font-size: 3em;
+		margin-top: 4.5em;
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	#primary-cta{
+		display: none;
+	}
+
+	#graph-container{
+		height: 35em;
+	}
+
+	#store-links{
+		left: 25%;
+		bottom: 25%;
+	}
+}
+
+/*
+*	Features
+*/
+
+#features {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+.feature-circle{
+	float: left;
+	width:50px;
+	height: 50px;
+	margin:10px;
+	background-color: lightblue;
+	-webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	transition:0.5s all;
+}
+
+#features .col-lg-4:hover .feature-circle{
+	height: 52px;
+	width: 52px;
+	-webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    border-radius: 26px;
+    background-color: rgb(65, 157, 187);
+}
+
+.feature-heading{
+	padding-top: 20px;
+	display: block;
+	margin-top:0;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	transition:0.5s all;
+}
+
+#features .col-lg-4:hover .feature-heading{
+	-webkit-transform: translateX(5px);
+	-moz-transform: translateX(5px);
+	-ms-transform: translateX(5px);
+	transform: translateX(5px);
+}
+
+.feature-desp{
+	clear: both;
+	margin: 15px;
+}
+
+/* Feature Phone */
+#phone-feature{
+	background: url(../img/feature-photo.jpg) #EECEB9;
+	background-size:cover;
+	min-height: 60em;
+}
+
+#download-type{
+	color: white;
+	margin-top: 1em;
+	font-size: 6em;
+	font-family: 'Duru Sans', sans-serif;
+	background-color: rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+	#phone-feature{
+  		background: url(../img/feature-photo.jpg) #EECEB9 64%;
+  		min-height: 42em;
+	}
+	#download-type{
+		font-size: 3.5em;
+	}
+}
+/* Testimonials */
+
+#testimonials .row{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+
+.face-wrap{
+	padding-right: 20px;
+	border-right: 2px solid lightblue;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	transition:0.5s all;
+}
+
+.img-circle{
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	transition:0.5s all;
+}
+
+#testimonials .row:hover .img-circle{
+	margin-right: 5px;
+}
+
+.quote , .face-wrap {
+	height: 128px;
+}
+
+.quote{
+	padding-top: 5px;
+	border-left:2px solid lightblue;
+	padding-left: 20px;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	transition:0.5s all;
+}
+
+#testimonials .row:hover .quote{
+	-webkit-transform:translateX(5px);
+	-moz-transform:translateX(5px);
+	-ms-transform:translateX(5px);
+	transform:translateX(5px);
+}
+
+/* App-Stores */
+
+.available{
+	text-align: center;
+	font-family: 'Duru Sans', sans-serif;
+}
+
+#app-stores img{
+	margin:1em auto;
+}
+/* Footer */
+
+#footer{
+	margin-top: 10em;
+	margin-bottom: 3em;
+}
